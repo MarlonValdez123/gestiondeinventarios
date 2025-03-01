@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",                            // Utiliza el módulo común
+    "declaration": true,                             // Generar archivos .d.ts
+    "removeComments": false,                         // No eliminar comentarios
+    "emitDecoratorMetadata": true,                   // Emitir metadata de decoradores
+    "experimentalDecorators": true,                  // Habilitar decoradores experimentales
+    "target": "es2017",                              // Establecer el objetivo en ES2017
+    "sourceMap": true,                               // Generar mapas de fuente
+    "outDir": "./dist",                              // Los archivos compilados irán a dist/
+    "baseUrl": "./",                                 // Base URL para las rutas relativas
+    "incremental": true,                             // Habilitar compilación incremental
+    "skipLibCheck": true,                            // Omite la comprobación de tipos en las bibliotecas
+    "strictNullChecks": false,                       // Desactivar comprobación estricta de null
+    "noImplicitAny": false,                          // No marcar variables sin tipo como error
+    "strictBindCallApply": false,                    // Desactivar comprobación estricta de bind/call/apply
+    "forceConsistentCasingInFileNames": false,      // No forzar consistencia de mayúsculas/minúsculas
+    "noFallthroughCasesInSwitch": false,             // No marcar errores de caídas de casos en switch
+    "rootDir": "./src",                              // Los archivos fuente estarán en la carpeta src
+    "esModuleInterop": true,                         // Habilitar la interoperabilidad de módulos ES
+    "skipDefaultLibCheck": true,                     // Saltar la comprobación de bibliotecas por defecto
+    "noEmitOnError": true,                           // No emitir archivos si hay errores
+    "typeRoots": ["./node_modules/@types", "./src/@types"] // Agrega esta línea para incluir tus tipos personalizados
+  },
+  "include": [
+    "src/**/*",                                      // Incluir todos los archivos dentro de src
+    "src/config/**/*"                                // Incluir también archivos dentro de config
+  ],
+  "exclude": [
+    "node_modules"                                   // Excluir node_modules
+  ]
+}
